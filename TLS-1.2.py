@@ -8,7 +8,7 @@ print(pyfiglet.figlet_format("TLS-1.2", font="smblock"))
 # DeprecationWarning: ssl.TLSVersion.TLSv1_1 is deprecated
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-server = "3.17.14.10"
+server = # CHANGE THIS IP TO WHATEVER SERVER YOU'RE HOSTING THE OPENSSL SERVER ON
 port = 6768
 key = os.path.join(os.getcwd(), "key.pem")
 cert = os.path.join(os.getcwd(), "cert.pem")
