@@ -8,7 +8,7 @@ print(pyfiglet.figlet_format("TLS-1.1", font="smblock"))
 # DeprecationWarning: ssl.TLSVersion.TLSv1_1 is deprecated
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-server = "3.17.14.10"
+server = # CHANGE THIS IP TO WHATEVER SERVER YOU'RE HOSTING THE OPENSSL SERVER ON
 port = 6768
 key = os.path.join(os.getcwd(), "key.pem")
 cert = os.path.join(os.getcwd(), "cert.pem")
@@ -48,6 +48,7 @@ timesheet = 'TLS-1.1.txt'
 
 # time.perf is used because it's precise.
 # We're wrapping it around the tls creation to measure the tls handshake. 
+# This will make a text file and add the results onto there.
 with open(timesheet, 'w') as log:
    
     for trials in range(req_trials):
