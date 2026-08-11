@@ -66,3 +66,8 @@ with open(timesheet, 'w') as log:
     print(f"Average: {sum(times) / len(times):.3f} ms", file=log)
     print(f"Min: {min(times):.3f} ms", file=log)
     print(f"Max: {max(times):.3f} ms", file=log)
+
+print(f"\nResults:")
+print(f"Average: {sum(times) / len(times):.3f} ms")
+print(f"Min: {min(times):.3f} ms")
+print(f"Max: {max(times):.3f} ms")
